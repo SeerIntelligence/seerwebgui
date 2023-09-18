@@ -1,3 +1,4 @@
+import Faq from '@/components/faq'
 export default function Newsletter() {
   return (
     <section>
@@ -8,7 +9,7 @@ export default function Newsletter() {
           <div className="relative bg-gray-900 rounded py-10 px-8 md:py-16 md:px-12 shadow-2xl overflow-hidden" data-aos="zoom-y-out">
 
             {/* Background illustration */}
-            <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block" aria-hidden="true">
+            <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block z-0" aria-hidden="true">
               <svg width="428" height="328" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                   <radialGradient cx="35.542%" cy="34.553%" fx="35.542%" fy="34.553%" r="96.031%" id="ni-a">
@@ -42,13 +43,17 @@ export default function Newsletter() {
 
                
               </div>
-
+              
             </div>
-
+            <div className='relative my-20 z-10'>
+            <Faq/>
+            </div>
           </div>
-
+          
+          
         </div>
       </div>
+      
     </section>
   )
 }

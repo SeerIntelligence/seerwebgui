@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import TestimonialImage from '@/public/images/testimonial.jpg'
+import Pricing from '@/components/pricing'
 
 export default function Testimonials() {
   return (
@@ -29,8 +30,10 @@ export default function Testimonials() {
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h2 className="h2 mb-4">We can detect over 16,500 vulnerabilites</h2>
             <p className="text-xl text-gray-600" data-aos="zoom-y-out">Nothing escapes our scanners! we have tuned our toolchain to detect most everything.</p>
-          </div>
 
+            
+          </div>
+          <Pricing/>
 
 
 
