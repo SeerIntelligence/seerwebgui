@@ -1,5 +1,9 @@
+// @ts-nocheck
 import VideoThumb from '@/public/images/hero-image.png'
 import ModalVideo from '@/components/modal-video'
+import React from 'react'
+import { Typewriter } from 'nextjs-simple-typewriter'
+
 
 export default function Hero() {
   return (
@@ -29,8 +33,30 @@ export default function Hero() {
 
           {/* Section header */}
           <div className="text-center pb-12 md:pb-16">
-            <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Make your company <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-pink-400">Secure</span></h1>
-            <div className="max-w-3xl mx-auto">
+            <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Make your company<span className="bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-pink-400">
+
+            <br></br>
+          <Typewriter
+            words={['Secure', 'Private', 'Respectable']}
+            loop={5}
+            cursor
+            cursorStyle='_'
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+          />
+
+
+
+
+
+            </span></h1>
+
+
+
+
+
+           <div className="max-w-3xl mx-auto">
               <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Our security recon leaves no stone unturned, we will scan every part of your company and find the maximum possible amount of vulnerabilities</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>

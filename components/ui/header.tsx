@@ -49,8 +49,6 @@ export default function Header() {
 
           </nav>
 
-          <MobileMenu />
-
         </div>
       </div>
     </header>

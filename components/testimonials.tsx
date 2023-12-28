@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import TestimonialImage from '@/public/images/testimonial.jpg'
 import Pricing from '@/components/pricing'
-
 export default function Testimonials() {
   return (
     <section className="relative">
@@ -33,12 +32,12 @@ export default function Testimonials() {
 
             
           </div>
-          <Pricing/>
 
 
 
         </div>
       </div>
+
     </section>
   )
 }
