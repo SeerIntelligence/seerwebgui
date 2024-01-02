@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 
 import Link from 'next/link'
 import Logo from './logo'
+import Menu from '@/components/menu'
 import Dropdown from '@/components/utils/dropdown'
 import MobileMenu from './mobile-menu'
 
@@ -31,7 +32,9 @@ export default function Header() {
           <div className="shrink-0 mr-4">
             <Logo />
           </div>
-
+	  <div class="content-center">
+	<Menu />
+	</div>
           {/* Desktop navigation */}
           <nav className="hidden md:flex md:grow">
             {/* Desktop sign in links */}

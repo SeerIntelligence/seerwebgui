@@ -1,4 +1,5 @@
 import Faq from '@/components/faq'
+import Services from '@/components/services'
 export default function Newsletter() {
   return (
     <section>
@@ -47,6 +48,7 @@ export default function Newsletter() {
             </div>
             <div className='relative my-20 z-10'>
             <Faq/>
+	    <Services/>
             </div>
           </div>
           
