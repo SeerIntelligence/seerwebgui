@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'SeerIntelligence',
-  description: 'Security for everyone',
+  title: 'SeerIntellignece',
+  description: 'Security first',
 }
 
 import Hero from '@/components/hero'
