@@ -6,7 +6,7 @@ const constants = {
     },
     hero: {
       title_big: "Make your company",
-      subtitle: "This is the content for page 2.",
+      subtitle: "Our security recon leaves no stone unturned, we will scan every part of your company and find the maximum possible amount of vulnerabilities",
       typewriter_words: ['Secure', 'Private', 'Accountable'],
       button_black: "Book us",
       button_red: "Get a free consult",

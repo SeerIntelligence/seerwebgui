@@ -105,14 +105,9 @@ export default function Newsletter() {
             <div className="relative my-20 z-10">
               <Faq />
             </div>
-            
-
           </div>
         </div>
       </div>
-
-      
-            
     </section>
   );
 }
