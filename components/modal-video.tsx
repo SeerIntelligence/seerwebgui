@@ -1,5 +1,5 @@
 'use client'
-
+// TODO: CLEAN THIS UP, IT'S UNUSED {DON'T TAKE MY WORD FOR IT, CHECK BEFOREHAND}
 import { useState, useRef, Fragment } from 'react'
 import type { StaticImageData } from 'next/image'
 import { Dialog, Transition } from '@headlessui/react'

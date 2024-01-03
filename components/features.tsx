@@ -5,6 +5,7 @@ import { Transition } from '@headlessui/react'
 import Image from 'next/image'
 import FeaturesBg from '@/public/images/features-bg.png'
 import FeaturesElement from '@/public/images/features-element.png'
+import constants from '@/constants'
 
 export default function Features() {
   
@@ -32,8 +33,8 @@ export default function Features() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">Explore our services</h1>
-            <p className="text-xl text-gray-600">We offer a wide variety of services suitable for companies of all sizes</p>
+            <h1 className="h2 mb-4">{constants.features.title}</h1>
+            <p className="text-xl text-gray-600">{constants.features.subtitle}</p>
           </div>
 
           {/* Section content */}
@@ -42,8 +43,8 @@ export default function Features() {
             {/* Content */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
-                <h3 className="h3 mb-3">Bleeding edge technology</h3>
-                <p className="text-xl text-gray-600">Our methods & toolchain are bleeding edge derived from our proprietary scientific research.</p>
+                <h3 className="h3 mb-3">{constants.features.title2}</h3>
+                <p className="text-xl text-gray-600">{constants.features.subtitle2}</p>
               </div>
               {/* Tabs buttons */}
               <div className="mb-8 md:mb-0">
@@ -53,8 +54,8 @@ export default function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(1); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Bleeding edge technology</div>
-                    <div className="text-gray-600">We develop our own methods of cyber security, and offer our own standard called Seer Open Standard Of Cyber Security (SOSCS).</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">{constants.features.content_1_title}</div>
+                    <div className="text-gray-600">{constants.features.content_1_subtitle}</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -68,8 +69,8 @@ export default function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(2); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Mathematical Cyber Security</div>
-                    <div className="text-gray-600">We use Probability and Mathematical data analysis to ensure that the most dangerous issues are adressed first.</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">{constants.features.content_2_title}</div>
+                    <div className="text-gray-600">{constants.features.content_2_subtitle}</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -83,8 +84,8 @@ export default function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(3); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Confidential Reports</div>
-                    <div className="text-gray-600">We deliver the reports of our scans in a secure manner to avoid unwanted eyes.</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">{constants.features.content_3_title}</div>
+                    <div className="text-gray-600">{constants.features.content_3_subtitle}</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">

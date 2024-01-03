@@ -3,6 +3,7 @@ import VideoThumb from '@/public/images/hero-image.png'
 import ModalVideo from '@/components/modal-video'
 import React from 'react'
 import { Typewriter } from 'nextjs-simple-typewriter'
+import constants from '@/constants'
 
 
 export default function Hero() {
@@ -33,11 +34,11 @@ export default function Hero() {
 
           {/* Section header */}
           <div className="text-center pb-12 md:pb-16">
-            <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Make your company<span className="bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-pink-400">
+            <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">{constants.hero.title_big}<span className="bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-pink-400">
 
             <br></br>
           <Typewriter
-            words={['Secure', 'Private', 'Respectable']}
+            words={constants.hero.typewriter_words}
             loop={5}
             cursor
             cursorStyle='_'
@@ -57,13 +58,13 @@ export default function Hero() {
 
 
            <div className="max-w-3xl mx-auto">
-              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Our security recon leaves no stone unturned, we will scan every part of your company and find the maximum possible amount of vulnerabilities</p>
+              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">{constants.hero.subtitle}</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
-                  <a className="btn text-white bg-red-500 hover:bg-red-600 w-full mb-4 sm:w-auto sm:mb-0" href="mailto:free@seerintelligence.com">Get a free consult</a>
+                  <a className="btn text-white bg-red-500 hover:bg-red-600 w-full mb-4 sm:w-auto sm:mb-0" href="mailto:free@seerintelligence.com">{constants.hero.button_red}</a>
                 </div>
                 <div>
-                  <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="mailto:book@seerintelligence.com">Book us</a>
+                  <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="mailto:book@seerintelligence.com">{constants.hero.button_black}</a>
                 </div>
               </div>
             </div>
