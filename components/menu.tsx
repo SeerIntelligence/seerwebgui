@@ -1,13 +1,10 @@
 // TODO: GET A LIFE AND FIX THIS PIECE OF GARBAGE
 
-import React from 'react'
+import React from "react";
 import Link from "next/link";
-import 'flowbite'
+import "flowbite";
 const Menu = () => {
-  return (
+  return <p> hi </p>;
+};
 
-<p> hi </p>
-  )
-}
-
-export default Menu
+export default Menu;
